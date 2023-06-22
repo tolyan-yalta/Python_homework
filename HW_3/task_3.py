@@ -34,5 +34,3 @@ while quantity > 0:
         if weight < max_weight:
             print(f"{item} общий вес = {weight:.2f} кг")
     quantity -= 1
-
-
