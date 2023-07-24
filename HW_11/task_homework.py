@@ -4,23 +4,10 @@
 class Matrix:
     """Класс Матрица"""
 
-    # def __init__(self, size: int):
-    #     """Конструктор матрицы."""
-    #     self.size = size
-    #     self.matrix = [[] for _ in range(self.size)]
-    #     for i in range(self.size):
-    #         self.matrix[i] = [int(input(f"Введите элемент матрицы: --> ")) for __ in range(self.size)]
-
-    def __init__(self, list_of_lists) -> None:
+    def __init__(self, list_of_lists):
         """Конструктор матрицы."""
         self.matrix = list_of_lists
         self.size = len(list_of_lists)
-
-    # def fill_matrix(self):
-    #     """Заполнение матрицы."""
-    #     for i in range(self.size):
-    #         for j in range(self.size):
-    #             self.matrix[i][j] = 
 
     def __str__(self) -> str:
         """Выводит матрицу в строчном виде."""
