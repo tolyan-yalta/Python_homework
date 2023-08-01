@@ -12,14 +12,15 @@
 # * метод удаления пользователя из списка пользователей проекта
 # * метод сохранения списка пользователей в JSON файл при выходе из контекстного менеджера
 
-from class_my_exception import AccessError, LevelError, DeleteUserError
-from class_user import User
+from my_exception import AccessError, LevelError, DeleteUserError
+from user import User
+# from 
 import json
 
 class Project:
     """Класс Project"""
     user_list = []
-    FILE_PATH = "HW_13/example.json"
+    FILE_PATH = "example.json"
     ADMIN_LEVEL = 3
 
     def __init__(self):
@@ -155,12 +156,12 @@ class Project:
 
 if __name__ == "__main__":
     proj = Project()
-    print(proj)
-    proj.logon()
-    print(proj)
-    print("Добавляем пользователя.")
-    proj.add_user()
-    print(proj)
-    print("Удаляем пользователя.")
-    proj.del_user()
-    print(proj)
+    print(type(proj))
+    # proj.logon()
+    # print(proj)
+    # print("Добавляем пользователя.")
+    # proj.add_user()
+    # print(proj)
+    # print("Удаляем пользователя.")
+    # proj.del_user()
+    # print(proj)
