@@ -98,13 +98,12 @@ class Project:
         else:
             raise AccessError(name, id)
         
-    @classmethod
-    def save_user_list(cls):
+    def save_user_list(self):
         """Метод записи списка пользователей в файл json"""
         with open(Project.FILE_PATH, 'w', encoding='utf-8') as f:
         # with open("task_5_2.json", 'w', encoding='utf-8') as f:
             dict_ = {}
-            for user in cls.user_list:
+            for user in Project.user_list:
                 if dict_.setdefault(user.user_level) == None:
                     dict_[user.user_level] = {user.user_id: user.user_name}
                 else:
